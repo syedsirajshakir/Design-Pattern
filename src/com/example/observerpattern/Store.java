@@ -20,7 +20,6 @@ public class Store {
 		
 		stock.add(user1);
 		stock.add(user2);
-		
 		stock.add(user3);
 		stock.add(user4);
 		stock.add(user5);
