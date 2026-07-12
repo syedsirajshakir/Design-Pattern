@@ -1,6 +1,6 @@
-package com.example.observerpattern.observer;
+package com.designpattern.structural.observerpattern.observer;
 
-import com.example.observerpattern.observable.StocksObservable;
+import com.designpattern.structural.observerpattern.observable.StocksObservable;
 
 public class MobileAlertObserverImpl implements NotificationAlertObserver {
 

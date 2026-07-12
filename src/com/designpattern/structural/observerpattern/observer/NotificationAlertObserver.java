@@ -1,4 +1,4 @@
-package com.example.observerpattern.observer;
+package com.designpattern.structural.observerpattern.observer;
 
 public interface NotificationAlertObserver {
 	

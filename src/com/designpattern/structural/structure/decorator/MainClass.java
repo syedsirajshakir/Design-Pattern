@@ -1,8 +1,8 @@
-package com.example.structure.decorator;
+package com.designpattern.structural.structure.decorator;
 
 
-import com.example.structure.decorator.topping.ChessPizza;
-import com.example.structure.decorator.topping.PannerPizza;
+import com.designpattern.structural.structure.decorator.topping.ChessPizza;
+import com.designpattern.structural.structure.decorator.topping.PannerPizza;
 
 public class MainClass {
 	

@@ -1,6 +1,6 @@
-package com.example.structure.decorator.topping;
+package com.designpattern.structural.structure.decorator.topping;
 
-import com.example.structure.decorator.Pizza;
+import com.designpattern.structural.structure.decorator.Pizza;
 
 public class PannerPizza extends Decorator {
 

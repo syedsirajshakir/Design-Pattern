@@ -1,17 +1,17 @@
-package com.example.structure.decorator;
+package com.designpattern.structural.structure.decorator;
 
-public class BasePizza implements Pizza {
+public class MargarittaPizza implements Pizza {
 
 	@Override
 	public String getDescription() {
 		// TODO Auto-generated method stub
-		return "Base Pizza";
+		return "margaritta pizza";
 	}
 
 	@Override
 	public float getCost() {
 		// TODO Auto-generated method stub
-		return 100f;
+		return 110f;
 	}
 
 }

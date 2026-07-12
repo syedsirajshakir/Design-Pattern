@@ -1,4 +1,4 @@
-package com.example.structure.decorator;
+package com.designpattern.structural.structure.decorator;
 
 public class VegPizza implements Pizza {
 

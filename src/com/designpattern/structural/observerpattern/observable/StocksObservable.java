@@ -1,6 +1,6 @@
-package com.example.observerpattern.observable;
+package com.designpattern.structural.observerpattern.observable;
 
-import com.example.observerpattern.observer.NotificationAlertObserver;
+import com.designpattern.structural.observerpattern.observer.NotificationAlertObserver;
 
 public interface StocksObservable {
 	
