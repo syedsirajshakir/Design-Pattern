@@ -1,6 +1,6 @@
 package com.designpattern.structural.structure.decorator.topping;
 
-import com.designpattern.structural.structure.decorator.Pizza;
+import com.designpattern.structural.structure.decorator.types.inter.Pizza;
 
 public abstract class Decorator implements Pizza {
 

@@ -1,16 +1,16 @@
-package com.designpattern.structural.structure.decorator;
+package com.designpattern.structural.structure.decorator.types;
+
+import com.designpattern.structural.structure.decorator.types.inter.Pizza;
 
 public class VegPizza implements Pizza {
 
 	@Override
 	public String getDescription() {
-		// TODO Auto-generated method stub
 		return "Veg Pizza";
 	}
 
 	@Override
 	public float getCost() {
-		// TODO Auto-generated method stub
 		return 120f;
 	}
 

@@ -1,4 +1,4 @@
-package com.designpattern.structural.structure.decorator;
+package com.designpattern.structural.structure.decorator.types.inter;
 
 public interface Pizza {
 	 String getDescription();

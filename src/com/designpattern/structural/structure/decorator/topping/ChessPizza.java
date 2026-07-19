@@ -1,6 +1,6 @@
 package com.designpattern.structural.structure.decorator.topping;
 
-import com.designpattern.structural.structure.decorator.Pizza;
+import com.designpattern.structural.structure.decorator.types.inter.Pizza;
 
 public class ChessPizza extends Decorator {
 
@@ -10,13 +10,11 @@ public class ChessPizza extends Decorator {
 
 	@Override
 	public String getDescription() {
-		
 		return this.pizza.getDescription()+" Addon Chess Pizza";
 	}
 
 	@Override
 	public float getCost() {
-		// TODO Auto-generated method stub
 		return this.pizza.getCost()+30;
 	}
 

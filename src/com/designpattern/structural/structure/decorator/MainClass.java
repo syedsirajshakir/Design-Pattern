@@ -3,6 +3,10 @@ package com.designpattern.structural.structure.decorator;
 
 import com.designpattern.structural.structure.decorator.topping.ChessPizza;
 import com.designpattern.structural.structure.decorator.topping.PannerPizza;
+import com.designpattern.structural.structure.decorator.types.BasePizza;
+import com.designpattern.structural.structure.decorator.types.MargarittaPizza;
+import com.designpattern.structural.structure.decorator.types.VegPizza;
+import com.designpattern.structural.structure.decorator.types.inter.Pizza;
 
 public class MainClass {
 	
