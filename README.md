@@ -1,22 +1,38 @@
 # Design Patterns (Java)
 
-This repository contains Java examples for two structural/behavioral design patterns:
+This repository contains small Java examples for core design patterns.
 
-1. **Observer Pattern** (`com.designpattern.structural.observerpattern`)
-2. **Decorator Pattern** (`com.designpattern.structural.structure.decorator`)
+## Included Patterns
 
+1. **Builder Pattern** (`com.designpattern.creational.builder`)
+2. **Observer Pattern** (`com.designpattern.structural.observerpattern`)
+3. **Decorator Pattern** (`com.designpattern.structural.structure.decorator`)
 
-## Pattern 1: Observer
+## Pattern Overview
 
-- **Observable/Subject**: `StocksObservable` and implementation `Iphoneobservable`
-- **Observers**: `NotificationAlertObserver` with implementations:
+### Builder
+
+- **Builder contract**: `ComputerBuilder`
+- **Product**: `Computer`
+- **Concrete builders**:
+  - `GamingComputer`
+  - `OfficeComputer`
+- **Driver**: `CreateComputer`
+
+Builds different computer configurations step-by-step while keeping object creation logic separated from representation.
+
+### Observer
+
+- **Observable/Subject**: `StocksObservable`, implementation `Iphoneobservable`
+- **Observer contract**: `NotificationAlertObserver`
+- **Concrete observers**:
   - `EmailAlertObserverImpl`
   - `MobileAlertObserverImpl`
 - **Driver**: `Store`
 
-When stock is updated from zero, subscribed observers receive notifications.
+When iPhone stock changes from zero, all subscribed observers are notified.
 
-## Pattern 2: Decorator
+### Decorator
 
 - **Component**: `Pizza`
 - **Concrete components**:
@@ -29,16 +45,27 @@ When stock is updated from zero, subscribed observers receive notifications.
   - `ChessPizza`
 - **Driver**: `MainClass`
 
-Decorators add toppings and cost on top of existing pizza objects at runtime.
+Adds toppings and incremental cost dynamically at runtime by wrapping pizza objects.
 
-## How to Run (Windows PowerShell)
+## Project Structure
 
-From the repository root:
+- Source code: `src/`
+- Compiled output (generated): `out/`
+
+## How to Compile and Run (Windows PowerShell)
+
+Run from the repository root (`Design-Pattern/`):
 
 ```powershell
 New-Item -ItemType Directory -Force out | Out-Null
 $sources = Get-ChildItem -Path .\src -Recurse -Filter *.java | ForEach-Object { $_.FullName }
 javac -d .\out $sources
+```
+
+Run Builder example:
+
+```powershell
+java -cp .\out com.designpattern.creational.builder.CreateComputer
 ```
 
 Run Observer example:
@@ -55,5 +82,5 @@ java -cp .\out com.designpattern.structural.structure.decorator.MainClass
 
 ## Notes
 
-- The project currently demonstrates concepts with simple console output.
-- Class names and messages are kept as-is from the current source.
+- This project is focused on concept demonstration with console output.
+- Naming is preserved from the existing implementation for consistency.
